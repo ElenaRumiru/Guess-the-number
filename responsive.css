@@ -1,0 +1,53 @@
+@media (max-width : 720px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        font-family: "Comfortaa", sans-serif;
+        font-size: 12px;
+    }
+    .game {
+
+        min-width: 300px;
+        width: 80%;
+        padding: 15px 5px 15px 5px;
+        min-height: inherit;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    .field__form__input {
+        padding: 10px;
+        min-width: 50px;
+      }
+
+    .desc__title {
+        font-size: 2em;
+        line-height: 22px;
+    }
+
+    .desc__subtitle {
+        position: relative;
+        top: -10px;
+    }
+
+    .filed__form__label {
+        margin-right: 5px;
+    }
+
+    .gradient_knopka {
+        padding: 10px 15px;
+    }
+}
+
+
+@media (max-width : 470px) {
+    .game {
+        min-width: 95%
+    }
+    .field__form__input {
+        max-width: 90px;
+      }
+      .gradient_knopka {
+        padding: 10px 10px;
+    }
+}
