@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Игра: угадай число</title>
+</head>
+
+<body>
+
+    <div class="waveWrapper waveAnimation">
+        <div class="waveWrapperInner bgTop">
+            <div class="wave waveTop"
+                style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+        </div>
+        <div class="waveWrapperInner bgMiddle">
+            <div class="wave waveMiddle"
+                style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+        </div>
+        <div class="waveWrapperInner bgBottom">
+            <div class="wave waveBottom"
+                style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="game">
+            <div class="desc">
+                <h1 class="desc__title">Игра: "Угадай число"</h1>
+                <p class="desc__subtitle">
+                    Угадай число от 1 до 100!
+                </p>
+            </div>
+            <form action="#">
+                <div class="field">
+                    <label for="" class="filed__form__label">Введи число: </label>
+                    <input type="number" class="field__form__input" placeholder="от 1 до 100"
+                        title="Введите число от 1 до 100" min="1" max="1000" required />
+                    <button class="field__form__btn gradient_knopka">Проверить</button>
+                    <span class="error-message"></span>
+                </div>
+            </form>
+            <div class="result">
+                <div class="result__check">
+                    <span class="result__check__label">Результат:&emsp;</span>
+                    <span class="result__check__out">&mdash;</span>
+                </div>
+                <div class="result__help">
+                    <span class="result__help">Подсказка:&emsp;</span>
+                    <span class="result__help__out">&mdash;</span>
+                </div>
+                <div class="result__count">
+                    <span class="result__count__label">Число попыток:&emsp;</span>
+                    <span class="result__count__out">0</span>
+                    <span>&emsp;из&emsp;</span>
+                    <span class="result__count__out_max">10</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

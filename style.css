@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+/* Добавляем анимацию бэкграунда */
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    background-image: linear-gradient(to top, #86377b 20%, #27273c 80%);
+}
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+
+/* Стилизация страницы */
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.game {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  min-width: 600px;
+  min-height: 400px;
+  border: 1px solid #eee;
+  box-shadow: 4px 4px 8px 4px rgba(34, 60, 80, 0.2);
+  flex-direction: column;
+  padding: 15px;
+}
+
+.desc__title {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.desc__subtitle {
+  color: #6c757d;
+  text-align: center;
+}
+
+.filed__form__label {
+  color: #6c757d;
+  margin-right: 10px;
+}
+
+.field__form__input {
+  padding: 10px;
+  width: 150px;
+  margin-right: 10px;
+  border: 1px solid #b2b0b0;
+  border-radius: 8px;
+}
+
+.result {
+    text-align: center;
+    width: inherit
+}
+
+.result > div {
+    margin-top: 8px;
+}
+
+.result__check, .result__help, .result__count {
+    
+}
+
+.error-message {
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+    color: #86377b;
+}
+
+.gradient_knopka {
+    color: #f7f4f4;
+    border-radius: 8px;
+    padding: 12px 30px;
+    border: solid rgba(45, 45, 45, 0.60);
+    box-shadow: 0px 0px 9px 2px rgba(195, 195, 195, 0.35);
+    transition: all 0.5s ease;
+    font-size: 12px;
+    font-weight: bold;
+    background-image: linear-gradient(60deg, #d356d1 10%, #ae35d6 50%, #36195c 100%);
+    box-shadow: 0 2px 25px 0 rgba(81, 17, 103, 0.35);
+  }
+  
+  .gradient_knopka:hover{
+    box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0);
+    transition: 1s;
+    background-image: linear-gradient(90deg,  #36195c 90%), #ae35d6 60%, #d356d1 10%;
+    transform: scale(0.930);
+  }
+  
+  .gradient_knopka_off {
+    background-image: linear-gradient(60deg, #938193 10%, #5e5a60 50%, #3f3c42 100%);
+    box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0);
+  }
+
+  .gradient_knopka_off:hover {
+    box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0);
+    transition: 1s;
+    background-image: linear-gradient(60deg, #938193 10%, #5e5a60 50%, #3f3c42 100%);
+    transform: scale(1);
+  }
+  
+  .cancel {
+    margin-top: 20px;
+  }
