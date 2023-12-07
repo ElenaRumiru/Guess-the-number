@@ -1,3 +1,6 @@
+
+#### DEMO GAME: https://elenarumiru.github.io/Guess-the-number/ 
+
 #### 0. Техническое задание
 
 1. Сгенерировать случайное число между 1 и 100.
