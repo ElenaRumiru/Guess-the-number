@@ -6,6 +6,7 @@
         font-family: "Comfortaa", sans-serif;
         font-size: 12px;
     }
+
     .game {
 
         min-width: 300px;
@@ -13,12 +14,12 @@
         padding: 15px 5px 15px 5px;
         min-height: inherit;
         justify-content: space-evenly;
-        flex-direction: row;
     }
+
     .field__form__input {
         padding: 10px;
         min-width: 50px;
-      }
+    }
 
     .desc__title {
         font-size: 2em;
@@ -41,13 +42,24 @@
 
 
 @media (max-width : 470px) {
+    body {
+        font-size: 11px;
+    }
+
     .game {
         min-width: 95%
     }
+
     .field__form__input {
         max-width: 90px;
-      }
-      .gradient_knopka {
-        padding: 10px 10px;
+        padding: 7px;
+    }
+
+    input::placeholder {
+        font-size: 10px;
+    }
+
+    .gradient_knopka {
+        padding: 7px 10px;
     }
 }
