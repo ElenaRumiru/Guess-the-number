@@ -13,7 +13,7 @@
 ---
 
 <div align="center">
-<img width="7075" height="555" alt="guess-number" src="https://github.com/user-attachments/assets/5c046420-47e4-4a8e-9c05-d300217cda8c" />
+<img width="7075" height="655" alt="guess-number" src="https://github.com/user-attachments/assets/5c046420-47e4-4a8e-9c05-d300217cda8c" />
 </div>
 
 ---
