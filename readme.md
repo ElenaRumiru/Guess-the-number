@@ -1,39 +1,79 @@
+<div align="center">
 
-#### DEMO GAME: https://elenarumiru.github.io/Guess-the-number/ 
+# Guess the Number
 
-#### 0. Техническое задание
+### Can you find the secret number in 10 tries?
 
-1. Сгенерировать случайное число между 1 и 100.
-2. Начать запись количества попыток игрока угадать число. Начать с 1.
-3. Предоставить попытку угадать игроку загаданное число.
-4. Вводимый диапазон 1 до 1000, но если больше 100 выводить предупреждение.
-5. Как только попытка угадать была отправлена, выводить счетчик попыток
-6. Далее, проверить было ли это число верным.
-7. Если число верное:
-    7.1. Показать поздравительное сообщение.
-    7.2. Оградить игрока от дальнейшей возможности ввода чисел (это испортит игру).
-    7.3. Предоставить возможность для перезапуска игры.
-8. Если число не верное и есть попытки:
-    8.1. Сказать игроку, что он не угадал.
-    8.2. Разрешить ему использовать ещё попытку.
-    8.3. Повысить число попыток на 1.
-    8.4. Если число попыток делится на 3 без остатка - получает подсказку число больше или меньше
-9. Если число не верное и попыток нет: Сказать игроку, что игра окончена.
-    9.1. Оградить игрока от дальнейшей возможности ввода чисел (это испортит игру).
-    9.2. Предоставить возможность для перезапуска игры без перезагрузки страницы.
-    9.3. Во время перезапуска игры убедиться, что игровая логика и пользовательский интерфейс полностью сбросились на начальные значения и далее перейти обратно к пункту 1.
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
 
-#### 1. Архитектура
+**[Play Now](https://elenarumiru.github.io/Guess-the-number/src/assets/)**
 
-Игра достаточно элементарная, поэтому была реализована в 4 функциональный файла:
+</div>
 
-1. index.html - разметка страницы, подключение css и js файлов
-2. reset.css -  стандартный сброс значений браузера
-3. style.css - стилизация станицы
-4. main.js - весь функционал игры
+---
 
-#### 2. Для разработчиков
+## About
 
-Если запустить консоль, вы можете увидеть загаданное число и протестировать поведение игры.
+A number guessing game with a beautiful **animated wave** purple gradient background. The computer picks a random number between 1 and 100 — you have **10 attempts** to guess it. Every 3rd wrong guess, you get a hint: higher or lower!
 
-Благодарю за внимание!
+## How to Play
+
+1. Enter a number from **1 to 100**
+2. Click **"Check"**
+3. See the result — right or wrong
+4. Every **3rd attempt** you get a directional hint
+5. Guess correctly within 10 tries to win!
+
+## Game Rules
+
+| Rule | Detail |
+|:-----|:-------|
+| Range | 1 to 100 |
+| Attempts | 10 max |
+| Hints | Every 3rd wrong guess (higher/lower) |
+| Over 100 | Warning message |
+| Restart | No page reload needed |
+
+## Features
+
+- Animated CSS wave background
+- Purple-to-dark gradient color scheme
+- Real-time attempt counter
+- Smart hint system (every 3rd try)
+- Input validation with range warning
+- Full game reset without page reload
+- Responsive design (mobile-friendly)
+- Debug: secret number visible in browser console
+
+## Tech Stack
+
+| | |
+|:--|:--|
+| **Logic** | Vanilla JavaScript |
+| **Styling** | CSS3 with wave animations |
+| **Layout** | Responsive with media queries |
+
+## Project Structure
+
+```
+readme.md
+src/
+  js/
+    main.js               # Game logic
+  assets/
+    index.html            # Game UI
+    styles/
+      style.css           # Theme + wave animation
+      responsive.css      # Mobile adaptation
+      reset.css           # CSS reset
+```
+
+---
+
+<div align="center">
+
+Made by Elena Rumiru
+
+**[Play Guess the Number](https://elenarumiru.github.io/Guess-the-number/src/assets/)**
+
+</div>
