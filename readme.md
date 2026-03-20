@@ -12,6 +12,12 @@
 
 ---
 
+<div align="center">
+<img width="7075" height="555" alt="guess-number" src="https://github.com/user-attachments/assets/5c046420-47e4-4a8e-9c05-d300217cda8c" />
+</div>
+
+---
+
 ## About
 
 A number guessing game with a beautiful **animated wave** purple gradient background. The computer picks a random number between 1 and 100 — you have **10 attempts** to guess it. Every 3rd wrong guess, you get a hint: higher or lower!
